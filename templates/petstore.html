@@ -1,0 +1,54 @@
+{% extends 'main.html' %}
+{% load static %}
+
+{% block title %}Pet Store{% endblock title %}
+{% block link %} <link rel="stylesheet" href="{% static 'css/style.css' %}" />{% endblock link %}
+
+{% block body %}
+    
+<div class="hero">
+    <video autoplay loop muted plays-inline class="backvideo">
+        <source src="{% static 'images/dogvid.mp4' %}" type="video/mp4">
+    </video>
+    <div class="nav">
+        <img src="" class="logo"><p>logo ko lagi thau</p>
+        <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">Collection</a></li>
+            <li><a href="#">Contact</a></li>
+            <li><a href="#">About</a></li>
+            <li><a href="#">My Cart</a></li>
+            <li><a href="#">Sign In</a></li>
+            <li><a href="#">Log In</a></li>
+        </ul>
+    </div>
+    
+    <div class="content">
+        <form action="" class="searchbar">
+            <input type="text" placeholder="search here" name="q">
+            <button type="submit"><img src="{% static 'images/search.png' %}">
+            </button>
+        </form>
+        <h1>PawFin</h1>
+        <p>hamro dami slogan</p>
+    <button type="button"><span></span>SHOP NOW</button>
+    </div>
+    </div>
+    
+    <div class="image">
+        <div class="marquee-container">
+            <div class="marquee">
+        <ul>
+        <img src="{% static 'images/cat.jpg' %}">
+        <img src="{% static 'images/cat2.jpg' %}">
+        <img src="{% static 'images/fish.jpg' %}">
+        <img src="{% static 'images/rabbit.jpg' %}">
+        <img src="{% static 'images/turtoise.jpg' %}">
+        </ul>
+        </marquee>
+        </div>
+    </div>
+    </div>
+</div>
+
+{% endblock body %}
