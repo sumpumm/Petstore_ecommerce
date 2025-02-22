@@ -2,7 +2,9 @@
 {% load static %}
 
 {% block title %}Pet Store{% endblock title %}
-{% block link %} <link rel="stylesheet" href="{% static 'css/style.css' %}" />{% endblock link %}
+{% block link %} <link rel="stylesheet" href="{% static 'css/style.css' %}" />
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+{% endblock link %}
 
 {% block body %}
     
@@ -16,7 +18,7 @@
             <li><a href="#">Home</a></li>
             <li><a href="#">Collection</a></li>
             <li><a href="#">Contact</a></li>
-            <li><a href="{% url 'aboutus' %}">About</a></li>
+            <li><a href="#">About</a></li>
             <li><a href="#">My Cart</a></li>
             <li><a href="#">Sign In</a></li>
             <li><a href="#">Log In</a></li>
@@ -25,30 +27,136 @@
     
     <div class="content">
         <form action="" class="searchbar">
-            <input type="text" placeholder="search here" name="q">
-            <button type="submit"><img src="{% static 'images/search.png' %}">
+            <input type="text" placeholder="search here" name="q"
+            <button type="submit"><img src="/image/search.png">
             </button>
         </form>
         <h1>PawFin</h1>
-        <p>Get Yourself a Paw</p>
+        <p>hamro dami slogan</p>
     <button type="button"><span></span>SHOP NOW</button>
     </div>
     </div>
-    
-    <div class="image">
-        <div class="marquee-container">
-            <div class="marquee">
-        <ul>
-        <img src="{% static 'images/cat.jpg' %}">
-        <img src="{% static 'images/cat2.jpg' %}">
-        <img src="{% static 'images/fish.jpg' %}">
-        <img src="{% static 'images/rabbit.jpg' %}">
-        <img src="{% static 'images/turtoise.jpg' %}">
-        </ul>
-        </marquee>
+    <br><br><br><br>
+<h1><center>Our Categories</center></h1>
+<br><br>
+<div class="image">
+    <div class="marquee-container">
+        <div class="marquee">
+    <ul>
+    <img src="{% static 'images/cat.jpg' %}">
+    <img src="{% static 'images/cat2.jpg' %}">
+    <img src="{% static 'images/fish.jpg' %}">
+    <img src="{% static 'images/rabbit.jpg' %}">
+    <img src="{% static 'images/turtoise.jpg' %}">
+    </ul>
+    </marquee>
+    </div>
+</div>
+</div>
+</div>
+<br><br><br><br><br><br><br><br>
+<h1><center>Our Best Sellers</center></h1>
+<div class="content1">
+    <div class="card">
+        <div class="img">
+        <img src="{% static 'images/cat.jpg' %}" alt="Avatar" style="width:100%">
+        </div>
+        <div class="container">
+        <h4><b>Dog Food</b></h4> 
+        Rs 1000
+        </div>
+        </div>
+    <div class="card">
+        <div class="img">
+        <img src="{% static 'images/cat.jpg' %}" alt="Avatar" style="width:100%">
+        </div>
+        <div class="container">
+        <h4><b>Dog Food</b></h4> 
+        Rs 1000 
+        </div>
+    </div>
+    <div class="card">
+        <div class="img">
+        <img src="{% static 'images/cat.jpg' %}" alt="Avatar" style="width:100%">
+        </div>
+        <div class="container">
+        <h4><b>Dog Food</b></h4> 
+        Rs 1000
+        </div>
+        </div>
+    <div class="card">
+        <div class="img">
+        <img src="{% static 'images/cat.jpg' %}" alt="Avatar" style="width:100%">
+        </div>
+        <div class="container">
+        <h4><b>Dog Food</b></h4> 
+        Rs 1000 
         </div>
     </div>
     </div>
+<div class="content1">
+    <div class="card">
+        <div class="img">
+        <img src="{% static 'images/cat.jpg' %}" alt="Avatar" style="width:100%">
+        </div>
+        <div class="container">
+        <h4><b>Dog Food</b></h4> 
+        Rs 1000 
+        </div>
+        </div>
+    <div class="card">
+        <div class="img">
+        <img src="{% static 'images/cat.jpg' %}" alt="Avatar" style="width:100%">
+        </div>
+        <div class="container">
+        <h4><b>Dog Food</b></h4> 
+        Rs 1000 
+        </div>
+    </div>
+    <div class="card">
+        <div class="img">
+        <img src="{% static 'images/cat.jpg' %}" alt="Avatar" style="width:100%">
+        </div>
+        <div class="container">
+        <h4><b>Dog Food</b></h4> 
+        Rs 1000 
+        </div>
+        </div>
+    <div class="card">
+        <div class="img">
+        <img src="{% static 'images/cat.jpg' %}" alt="Avatar" style="width:100%">
+        </div>
+        <div class="container">
+        <h4><b>Dog Food</b></h4> 
+        Rs 1000 
+        </div>
+    </div>
+</div>    
 </div>
+<div class="footer">
+<div class="footerContainer">
+<div class="socialIcons">
+    <a href=""><i class="fa-brands fa-facebook"></i></a>
+    <a href=""><i class="fa-brands fa-instagram"></i></a>
+    <a href=""><i class="fa-brands fa-tiktok"></i></a>
+    <a href=""><i class="fa-brands fa-whatsapp"></i></a>
+    <a href=""><i class="fa-brands fa-youtube"></i></a>
+</div>
+<div class="footerNav">
+    <ul>
+        <li><a href="">Privacy</a></li>
+        <li><a href="">Terms</a></li>
+        <li><a href="">FAQ</a></li>
+        <li><a href="">Events</a></li>
+        <li><a href="">Updates</a></li>
+    </ul>
+</div>
+<div class="footerBottom">
+    <h4>Copyright &copy;2025 </h4>
+</div>
+
+</footer>
+</div>
+</body>
 
 {% endblock body %}
